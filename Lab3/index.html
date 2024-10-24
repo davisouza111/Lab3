@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitais Europeias</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+    
+        .capitais {
+            display: flex;
+            flex-flow: row wrap;          
+            justify-content: space-around; 
+            align-items: center;          
+            background-color: rgb(238, 238, 238);
+            padding: 50px;
+            gap: 20px;                    
+        }
+
+       
+        .capitais > div {
+            display: flex;
+            flex-direction: column;       
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;         
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            padding: 15px;
+            width: 180px;                 
+            transition: transform 0.3s; 
+        }
+
+       
+        .capitais > div:hover {
+            transform: scale(1.05);    
+        }
+
+       
+        .capitais img {
+            width: 100%;                 
+            height: auto;                 
+            border-radius: 15px 15px 0 0;
+        }
+
+        .capitais p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;                   
+            text-align: center;
+        }
+
+        
+        .capitais a {
+            text-decoration: none;        
+            color: inherit;               
+            display: block;               
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Capitais Europeias</h1>
+
+    
+    <div class="capitais">
+        <div>
+            <a href="https://pt.wikipedia.org/wiki/Amsterdam" target="_blank">
+                <img src="images/amsterdam.png" alt="Amsterdam">
+                <p>Amsterdam</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://pt.wikipedia.org/wiki/Atenas" target="_blank">
+                <img src="images/atenas.png" alt="Atenas">
+                <p>Atenas</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://pt.wikipedia.org/wiki/Paris" target="_blank">
+                <img src="images/paris.png" alt="Paris">
+                <p>Paris</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://pt.wikipedia.org/wiki/Berna" target="_blank">
+                <img src="images/berna.png" alt="Berna">
+                <p>Berna</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://pt.wikipedia.org/wiki/Copenhage" target="_blank">
+                <img src="images/copenhage.png" alt="Copenhage">
+                <p>Copenhage</p>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
